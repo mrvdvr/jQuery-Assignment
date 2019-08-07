@@ -12,13 +12,13 @@
 	    		<h1 class="title">LiveCoding Topics</h1>
           <p>Topics for coders</p>
           <form id="search-topics">
-            <input type="text" placeholder="Search topics..." />
+            <input id="text" type="text" placeholder="Search topics..." />
           </form>
 	    	</div>
 	    </header>
 	    <div id="topic-list">
 	    	<h2 class="title">Topics to Cover</h2>
-	    	<ul>
+	    	<ul id="list">
 	    		<li>
 	    			<span class="name">JavaScript Essentials 1</span>
 	    			<span class="delete">delete</span>
@@ -40,10 +40,11 @@
 	    <form id="add-topic">
 			<input type="checkbox" id="hide" />
 			<label for="hide"> Hide all topics </label>
-	    	<input type="text" placeholder="Add a topic..." />
+	    	<input id="add-list" type="text" placeholder="Add a topic..." />
 	    	<button>Add</button>
 	    </form>
-    </div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="app.js"></script>
   </body>
 </html>
